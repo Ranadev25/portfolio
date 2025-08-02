@@ -52,7 +52,7 @@
 <body class="text-[var(--text-color)] bg-[var(--body-color)]">
 
   <!-- nevbar or header section -->
-  <div class="header z-50  bg-[var(--header-boder)] h-[70px] fixed left-0 top-0 right-0 ">
+  <div class="header z-50  bg-[var(--header-boder)] h-[70px] fixed left-0 top-0 w-full">
     <nav class=" flex justify-between items-center h-[100%] px-5">
       
       <div class="max-sm:flex justify-between items-center " >
@@ -60,7 +60,7 @@
         <h1 class="logo text-[30px] icon-gred ml-10 max-sm:ml-5 cursor-pointer">Portfolio</h1>
 
       </div>
-      <div class="navber max-sm:fixed max-sm:h-[600px] max-sm:w-[300px] max-sm:left-[-100%] max-sm:top-0 max-sm:bg-[var(--nev-small-bg)] z-50 duration-500 transition-[.5s ease-in-ou%SSt] max-sm:opacity-0">
+      <div class="navber max-sm:fixed max-sm:h-[600px] max-sm:w-[300px] max-sm:left-[-100%] max-sm:top-0 max-sm:bg-[var(--nev-small-bg)] z-50 duration-500 transition-[.4s ease-in-out] max-sm:opacity-0">
         <div class="max-sm:flex hidden justify-between items-center max-sm:mt-4">
           <span class="logo text-[30px] icon-gred ml-5 cursor-pointer">Portfolio</span>
           <i class="bx bx-x cancel text-[27px] mr-3 sliderclose cursor-pointer"></i>
@@ -81,26 +81,14 @@
           <i class='bx bx-sun sun absolute text-white'></i>
           <i class='bx bx-moon moon absolute text-black opacity-0 pointer-events-none'></i>
         </div>
-        <div class="scarchbox relative ml-5">
-
-          <div class="togglescaech relative w-10 h-10 flex justify-center items-center text-[27px] cursor-pointer duration-500 transition ease-in-out">
-            <i class='bx bx-search search absolute'></i>
-            <i class="bx bx-x cancel cancel absolute opacity-0 pointer-events-none"></i>
-          </div>
-
-          <div class="seachbox absolute h-10 right-4 duration-500 transition-all ease-in-out bottom-[-50px] rounded-md w-[250px] opacity-0 pointer-events-none">
-            <input type="text" placeholder="Search..." class=" scarchinput h-[100%] border-2 border-[var(--input-border-color)] bg-[var(--input-bg-color)] text-[var(--input-color)] w-[100%] pl-2 text-[20px] rounded-md outline-none">
-            <i class='bx bx-search absolute top-2.5 right-2 text-[var(--menu-hover-color)] text-[25px] '></i>
-          </div>
-        </div>
       </div>
       
        
     </nav>
-  </div>
+  </div> 
 
   <!-- home section -->
-  <section id="home" class=" home m-auto md:flex justify-center items-center md:h-[550px] gap-5 max-md:mx-5 md:mx-[7%] md:mt-10">
+  <section id="home" class="w-[100%] home m-auto md:flex justify-center items-center md:h-[550px] gap-5 max-md:px-5 md:px-[7%] md:mt-10">
     <div class="home-img md:hidden pt-32 mb-10" >
       <div class="img-box relative h-[300px] w-[300px] md:w-[30vw]  rounded-[50%] p-2 flex justify-center items-center overflow-hidden mx-auto" >
         <div class="img-item relative w-[100%] h-[100%] bg-[var(--body-color)] rounded-[50%] border-3 border-blue-600 flex justify-center z-30 overflow-hidden">
@@ -109,8 +97,8 @@
       </div>
     </div>
     <div class="home-info md:w-[60%] md:pr-10 max-md:pb-10">
-      <h3 class="text-[15px] font-bold">Hello, It's Me</h1>
-      <h1 class="homein-h1 text-[27px] font-bold text-[var(--title-color)]">Atikul Haq (<span class="italic text-[--menu-hover-color]"> Rana </span>)</h1>
+      <h3 class="text-[20px] font-bold">Hello, It's Me</h1>
+      <h1 class="homein-h1 text-[40px] font-bold text-[var(--title-color)]">Atikul Haq (<span class="italic text-[--menu-hover-color]"> Rana </span>)</h1>
       <h2 class="text-[20px]">I'm a <span id="element"></span></h2>
       <p class="text-[15px] py-3 pb-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ducimus temporibus aliquid minima, repellendus excepturi? Quas sit ipsum eligendi magnam.</p>
       <div class="btn-sci">
@@ -135,12 +123,12 @@
 
   <!-- about section -->
   <section id="about" class="about max-md:px-5 bg-[var(--about-bg-color)] md:py-10 ">
-    <div class="about-item md:flex justify-center items-center gap-14 md:h-[400px] py-5 md:mx-[10%] ">
-      <div class="about-img max-sm:max-w-[90vw] max-md:max-w-[50vw] md:max-w-[25vw] max-md:mx-auto">
-        <img class=" about-images hue-rotate-60" src="./images/owner.jpg" alt="">
+    <div class="about-item md:flex justify-center items-center gap-14 md:h-[400px] py-5 md:px-[10%] ">
+      <div class="about-img max-sm:max-w-[90vw] max-md:max-w-[50%] md:max-w-[25vw] max-md:mx-auto">
+        <img class=" about-images hue-rotate-60" src="./images/owner.jpg">
       </div>
-      <div class="about-content max-md:my-10">
-        <h2 class="text-[35px] leading-9 text-[#4cd137] about-h2 font-bold">About <span class="text-[--title-color]">me</span></h2>
+      <div class="about-content max-md:my-10 ">
+        <h2 class="text-[40px]  text-[#4cd137] about-h2 font-bold">About <span class="text-[--title-color]">me</span></h2>
         <h3 class="text-[22px]">Fontend Developer</h3>
         <p class="text-[15px] py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veritatis ducimus autem impedit odit eos, labore veniam commodi praesentium. Maxime assumenda officiis, ratione porro modi suscipit excepturi nam amet aut?</p>
         <a href="#" class="btn text-[var(--btn-color)]">Read more...</a>
@@ -151,7 +139,7 @@
 
   <!-- scervice section -->
    <section id="service" class="scervice max-md:px-5 md:px-[7%] text-center sm:pt-16">
-    <h2 class="text-[30px] hover:text-[var(--input-border-color)] cursor-pointer text-[#4cd137] font-bold">Our Scervice</h2>
+    <h2 class="text-[40px] hover:text-[var(--input-border-color)] cursor-pointer text-[#4cd137] font-bold servic-h2">Our Scervice</h2>
     <div class="scervice-content sm:flex justify-center items-center gap-10 flex-wrap ">
 
       <div class="scervice-item scervice-item1 w-[250px] border-y-4 border-y-[var(--menu-hover-color)] rounded-lg py-8 my-10 mx-auto px-2 border-x border-x-[var(--header-boder)]">
@@ -174,17 +162,17 @@
         <p class="my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla earum alias beatae possimus doloribus illum!</p>
         <button class="button mx-auto"><a href="#">read more</a></button>
       </div>
-    </div>
+    </div> 
    </section>
 
    <!-- skill section -->
    <section id="skill" class="skill max-md:px-5 md:px-[7%] pt-10">
      <div class="main-text text-center">
-      <h2 class="text-[30px] hover:text-[var(--input-border-color)] cursor-pointer text-[#4cd137] font-bold py-10">My Skills</h2>
+      <h2 class="text-[40px] hover:text-[var(--input-border-color)] cursor-pointer text-[#4cd137] font-bold py-10 skill-h2">My Skills</h2>
      </div>
 
-     <div class="skill-main sm:grid sm:grid-cols-2 gap-10 ">
-       <div class="skill-left">
+     <div class="skill-main md:flex gap-5">
+       <div class="skill-left md:w-[50%]">
         <h3 class="mb-10 tec  font-semibold text-[23px] text-[var(--new-bg-color)] border-b-2 border-[var(--input-color)] inline-block">Technical Skills</h3>
 
         <div class="skill-bar">
@@ -229,10 +217,37 @@
 
 
        </div>
-       <div class="skill-right">
-        <h3 class="mb-10 mt-5 font-semibold text-[23px] text-[var(--new-bg-color)] border-b-2 border-[var(--input-color)] inline-block">Professional Skills</h3>
+       <div class="skill-right md:w-[50%]">
+        <h3 class="mb-10 max-md:mt-5 font-semibold text-[23px] text-[var(--new-bg-color)] border-b-2 border-[var(--input-color)] inline-block">Professional Skills</h3>
         <div class="profational">
-          
+          <div class="box">
+            <div class="circle" data-dots="80" data-percent="80"></div>
+            <div class="texte">
+              <big>80%</big>
+              <small>Team work</small>
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle" data-dots="80" data-percent="75"></div>
+            <div class="texte">
+              <big>75%</big>
+              <small>Creativity</small>
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle" data-dots="80" data-percent="50"></div>
+            <div class="texte">
+              <big>50%</big>
+              <small>Project Mangement</small>
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle" data-dots="80" data-percent="10"></div>
+            <div class="texte">
+              <big>10%</big>
+              <small>Comiuni,cation</small>
+            </div>
+          </div>
         </div>
        </div>
      </div>
@@ -241,10 +256,10 @@
    <!-- portfolio section -->
     <section id="project" class="fortfolio max-md:px-5 md:px-[7%] text-center pt-20">
 
-      <h2 class="text-[30px] hover:text-[var(--input-border-color)] cursor-pointer pb-10 text-[#4cd137] font-bold">New Project</h2>
+      <h2 class="text-[40px] hover:text-[var(--input-border-color)] cursor-pointer pb-10 text-[#4cd137] font-bold project-h2">New Project</h2>
 
       <div class="fortfolio-container sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="fortfolio-box max-sm:my-5">
+         <div class="fortfolio-box max-sm:my-5">
           <img class="" src="./images/laptop-1.jpeg" alt="">
 
           <div class="fortfolio-leyer pt-6 px-2 max-sm:flex justify-center items-center flex-col">
@@ -303,11 +318,11 @@
     </section>
 
   <section id="contract" class="contract pt-14 max-md:px-5 md:px-[7%] py-10 bg-[var(--contract-color)] rounded-tl-3xl rounded-tr-3xl mx-2 mt-20">
-     <h2 class="tittle-contract text-center text-[30px] hover:text-[var(--input-border-color)] cursor-pointer text-[#4cd137] font-bold pb-10 ">Contact Me</h2>
+     <h2 class="tittle-contract text-center text-[40px] hover:text-[var(--input-border-color)] cursor-pointer text-[#4cd137] font-bold pb-10 ">Contact Me</h2>
     <div class="max-width grid sm:grid-cols-2 gap-10">
       
       <div class="column-left">
-        <div class="texts icon-gred text-[20px]">Get in touch</div>
+        <div class="texts icon-gred text-[20px] inline-block">Get in touch</div>
         <p class="text-[15px] text-[var(--text-color)]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eum veritatis blanditiis obcaecati iure ea voluptates dolorum, est quam pariatur!</p>
         <div class="icons"> 
           <div class="row flex justify-start items-center gap-5 my-3">
@@ -337,8 +352,8 @@
       </div>
 
       <div class="column-right flex items-center">
-        <form action="#">
-          <h1 class=" icon-gred text-[20px] mb-3">Message me</h1>
+        <form class="w-[100%]" action="#">
+          <h1 class=" icon-gred text-[20px] mb-3 inline-block">Message me</h1>
           <div class="fields">
             <div class="flex gap-5 w-[100%] my-2">
               <div class="w-[48%] ">
@@ -352,7 +367,7 @@
               <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" type="text" placeholder="Subject" required>
             </div>
             <div class="field textarea mt-5">
-              <textarea class="p-3  rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color] " rows="3" cols="25" placeholder="Seacribe project..." required></textarea>
+              <textarea class="p-3  rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color] w-[100%]" rows="3"  placeholder="Seacribe project..." required></textarea>
             </div>
             <div class="button ">
               <button type="submit" class="z-50">Send message</button>

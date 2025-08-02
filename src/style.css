@@ -270,19 +270,19 @@ body{
 }
 .bar .html{
   width: 80%;
-  animation: html .5s ease-in;
+  animation: html 1s ease-in;
 }
 .bar .css{
   width: 75%;
-  animation: css 1s ease-in;
+  animation: css .9s ease-in;
 }
 .bar .javascript{
   width: 50%;
-  animation: javascript .7s ease-in;
+  animation: javascript .8s ease-in;
 }
 .bar .react{
   width: 10%;
-  animation: react .8s ease-in;
+  animation: react .7s ease-in;
 }
 
 @keyframes html{
@@ -321,9 +321,9 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.profational .box{
+.box{
   margin: 10px 0;
-  flex:1 1 15px;
+  flex:1 1 15rem;
   position: relative;
 }
 .circle{
@@ -332,28 +332,48 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  border:2px solid var(--nev-small-bg)
 }
-
-.text{
+.box .texte{
   text-align: center;
-  color:var(--text-color);
-  font-size: 15px;
-
+  font-size: 1rem;
 }
-.text big{
-  font: 400;
+
+.texte big{
+  font-size:400;
   letter-spacing: 1px;
   position: absolute;
   top:40%;
-  left: 50%;
+  left:50%;
   transform: translate(-50%, -50%);
+
 }
-.text small{
+.texte small{
   display: block;
   font-weight: 600;
 }
+.circle .points{
+  width: 2px;
+  height: 10px;
+  background: var(--input-border-color);
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+}
 
+@keyframes glow{
+  0%{
+    background: var(--input-border-color);
+    box-shadow: none;
+  }
+  100%{
+    background: var(--btn-hover-bg);
+    box-shadow:0 0 2px 1px var(--btn-hover-bg);
+  }
+}
+.points.marked{
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i)*0.02s);
+}
 /* -----------project or fortfolio section---------- */
 .fortfolio-box{
   position: relative;
