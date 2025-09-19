@@ -277,11 +277,11 @@ body{
   animation: css .9s ease-in;
 }
 .bar .javascript{
-  width: 50%;
+  width: 60%;
   animation: javascript .8s ease-in;
 }
 .bar .react{
-  width: 10%;
+  width: 50%;
   animation: react .7s ease-in;
 }
 
@@ -410,6 +410,5 @@ body{
 .row i{
   color:var(--menu-hover-color)
 }
-
 
 
