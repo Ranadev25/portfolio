@@ -277,12 +277,26 @@ body{
   animation: css .9s ease-in;
 }
 .bar .javascript{
-  width: 60%;
+  width: 65%;
   animation: javascript .8s ease-in;
 }
 .bar .react{
-  width: 50%;
+  width: 80%;
   animation: react .7s ease-in;
+}
+.bar .node_js{
+  width: 50%;
+  animation: node .8s ease-in;
+}
+
+.bar .express_js{
+  width: 65%;
+  animation: node .9s ease-in;
+}
+
+.bar .mongodb{
+  width: 50%;
+  animation: node .7s ease-in;
 }
 
 @keyframes html{
