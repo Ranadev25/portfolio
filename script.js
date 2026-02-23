@@ -83,7 +83,7 @@ menu.forEach(li => {
 // --------------text countint getitem in cdn---------------------
 //------------home section start--------------------
 var typed = new Typed('#element', {
-      strings: ['Fontend Devoloper...','youtuber and', 'Web Devoloper.'],
+      strings: ['Frontend Developer...','YouTuber and', 'Web Developer.'],
       typeSpeed: 100,
       backDelay: 1000,
       backSpeed: 100,
