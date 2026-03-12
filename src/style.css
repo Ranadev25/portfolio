@@ -213,6 +213,9 @@ body{
 .button:active{
   transform: scale(0.90)
 }
+.newbtn{
+  width: 100%;
+}
 .scervice-item{
   transition: .3s ease-in-out;
 }

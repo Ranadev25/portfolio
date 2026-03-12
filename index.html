@@ -353,25 +353,25 @@
       </div>
 
       <div class="column-right flex items-center">
-        <form class="w-[100%]" action="#">
+        <form class="w-[100%]" action="#"  id="message-from">
           <h1 class=" icon-gred text-[20px] mb-3 inline-block">Message me</h1>
           <div class="fields">
             <div class="flex gap-5 w-[100%] my-2">
               <div class="w-[48%] ">
-                <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" type="text" placeholder="Name" required>
+                <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" name="name" id="name" type="text" placeholder="Name" required>
               </div>
               <div class="w-[48%]">
-                <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" type="email" placeholder="Email" required>
+                <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" name="email" type="email" id="email" placeholder="Email" required>
               </div>
             </div>
             <div class="field subject my-5">
-              <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" type="text" placeholder="Subject" required>
+              <input class="w-[100%] h-[40px] pl-3 rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color]" name="subject" type="text" placeholder="Subject" id="subject" required>
             </div>
             <div class="field textarea mt-5">
-              <textarea class="p-3  rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color] w-[100%]" rows="3"  placeholder="Seacribe project..." required></textarea>
+              <textarea class="p-3  rounded-lg outline-none text-black focus:border-2  focus:border-[--menu-hover-color] w-[100%]" rows="3" name="message"  placeholder="Message me" id="message" required></textarea>
             </div>
-            <div class="button min-w-[100%] ">
-              <button type="submit" class="z-50 ">Send message</button>
+            <div class="button newbtn">
+              <button type="submit" class="z-50 w-full block ">Send message</button>
             </div>
           </div>
         </form>

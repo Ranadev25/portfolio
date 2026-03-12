@@ -1,8 +1,10 @@
+const handelMessage = require("../controllers/massageMe");
+const validationInput = require("../validation/messageValidation");
+const runValidation = require("../validation/runValidation");
+
 const userRoute = require("express").Router();
 
-userRoute.get("/", (req, res, next) => {
-  res.json({message:"hello"})
-})
+userRoute.post("/",validationInput, runValidation, handelMessage)
 
 
 module.exports = userRoute;
