@@ -14,7 +14,7 @@ const handelMessage = async (req, res, next) => {
     return successResponse(res, {
       statusCode: 200,
       message:
-        "Message sent successfully. Places waite for my replay and I’ll get back as quickly as possible",
+        `Hi ${name}. Places waite for my replay and I’ll get back as quickly as possible`,
     });
   } catch (error) {
     next(error);
